@@ -1,0 +1,602 @@
+[
+  {
+    "question": "Which company developed Kotlin?",
+    "correctAnswer": "JetBrains",
+    "incorrectAnswers": ["Microsoft", "Google", "Apple"],
+    "explanation": "Kotlin was developed by JetBrains, a software development company known for creating popular IDEs like IntelliJ IDEA, PyCharm, and PhpStorm. Kotlin was initially released in 2011.",
+    "topicCode": 1
+  },
+  {
+    "question": "What is the correct way to write a single-line comment in Kotlin?",
+    "correctAnswer": "// This is a comment",
+    "incorrectAnswers": ["# This is a comment", "/* This is a comment */", "<!-- This is a comment -->"],
+    "explanation": "In Kotlin, single-line comments are written using //. Everything after the // on the same line is ignored by the compiler.",
+    "topicCode": 1
+  },
+  {
+    "question": "Which of the following is the correct way to declare a variable in Kotlin?",
+    "correctAnswer": "val x = 10",
+    "incorrectAnswers": ["variable x = 10", "x : var = 10", "let x = 10"],
+    "explanation": "In Kotlin, variables are declared using var (for mutable variables) or val (for immutable variables), followed by the variable name, the assignment operator =, and the value. For example, val x = 10 declares an immutable variable x with the value 10.",
+    "topicCode": 1
+  },
+  {
+    "question": "What is the main difference between val and var in Kotlin?",
+    "correctAnswer": "val is for read-only properties, while var is for mutable properties",
+    "incorrectAnswers": [
+      "val is used for global variables, and var is for local variables.",
+      "val stores integers, and var stores strings.",
+      "There is no difference; they are interchangeable."
+    ],
+    "explanation": "val is used to declare read-only properties, meaning their values cannot be changed once assigned. On the other hand, var is used to declare mutable properties, allowing their values to be changed or reassigned after initialization.",
+    "topicCode": 1
+  },
+  {
+    "question": "Which of the following is a valid data type in Kotlin?",
+    "correctAnswer": "String",
+    "incorrectAnswers": ["integer", "char", "text"],
+    "explanation": "Kotlin uses String (capitalized) to represent text, unlike some other languages. integer and text are not valid data types in Kotlin. char must be capitalized (Char) to be valid.",
+    "topicCode": 1
+  },
+  {
+    "question": "What is the size (in bits) of an Int data type in Kotlin?",
+    "correctAnswer": "32 bits",
+    "incorrectAnswers": ["8 bits", "16 bits", "64 bits"],
+    "explanation": "The Int data type in Kotlin is a 32-bit signed integer. Kotlin also provides Byte, Short, and Long for different ranges and sizes.",
+    "topicCode": 1
+  },
+  {
+    "question": "In Kotlin, what is the default data type for a floating-point number without a suffix?",
+    "correctAnswer": "Double",
+    "incorrectAnswers": ["Float", "Decimal", "None of the above"],
+    "explanation": "In Kotlin, the default data type for a floating-point number without a suffix is Double. To use Float, you must explicitly add an f or F at the end of the value (e.g., 3.14f).",
+    "topicCode": 1
+  },
+  {
+    "question": "Which of the following represents the disjunction (logical OR) operation in Kotlin?",
+    "correctAnswer": "||",
+    "incorrectAnswers": ["&&", "!", "None of the above"],
+    "explanation": "The disjunction (logical OR) operation in Kotlin is represented by the || operator. It is used to combine two or more boolean expressions and returns true if any of the expressions is true.",
+    "topicCode": 1
+  },
+  {
+    "question": "What is the correct way to declare a character literal in Kotlin?",
+    "correctAnswer": "'A'",
+    "incorrectAnswers": ["\"A\"", "c('A')", "char('A')"],
+    "explanation": "The correct way to declare a character literal in Kotlin is by using single quotes. So, the correct character literal declaration is: 'A'",
+    "topicCode": 1
+  },
+  {
+    "question": "What is the result of the following expression in Kotlin: \"Kotlin\".length?",
+    "correctAnswer": "6",
+    "incorrectAnswers": ["5", "7", "8"],
+    "explanation": "The length property of a string in Kotlin returns the number of characters in the string, and in this case, the string \"Kotlin\" has 6 characters: K-o-t-l-i-n.",
+    "topicCode": 1
+  },
+  {
+    "question": "What is the correct syntax for using a string template in Kotlin?",
+    "correctAnswer": "Both 1 and 2.",
+    "incorrectAnswers": ["\"Hello, ${name}!\"", "\"Hello, $name!\"", "\"Hello, (name)!\""],
+    "explanation": "Kotlin allows you to use string templates with the $ sign followed by the variable name. You can also use ${} for more complex expressions or to clarify variable names.",
+    "topicCode": 1
+  },
+  {
+    "question": "Which of the following is NOT a comparison operator in Kotlin?",
+    "correctAnswer": "<<",
+    "incorrectAnswers": [">", "<", "<="],
+    "explanation": "The << operator is not a comparison operator in Kotlin. It is a bitwise left shift operator.",
+    "topicCode": 1
+  },
+  {
+    "question": "Which of the following is true about ‘when’ in Kotlin?",
+    "correctAnswer": "All of the above",
+    "incorrectAnswers": [
+      "‘when’ is a replacement for the switch statement in Java.",
+      "‘when’ can evaluate ranges, logical expressions, or individual values.",
+      "‘when’ can be used without an argument."
+    ],
+    "explanation": "The ‘when’ statement is a powerful replacement for Java's switch, and it can evaluate ranges, logical expressions, and can even be used without an argument.",
+    "topicCode": 1
+  },
+  {
+    "question": "How can you iterate over a collection with both the index and value in Kotlin?",
+    "correctAnswer": "for ((index, value) in collection.withIndex())",
+    "incorrectAnswers": [
+      "for ((index, value) in collection)",
+      "for (index, value in collection)",
+      "for (index in collection.indices)"
+    ],
+    "explanation": "To iterate over a collection with both the index and value, you use the withIndex() function and destructuring declaration syntax (index, value).",
+    "topicCode": 1
+  },
+  {
+    "question": "What is a key advantage of using named arguments in Kotlin?",
+    "correctAnswer": "You can specify arguments in a different order than their definition.",
+    "incorrectAnswers": [
+      "You can call a function without specifying any arguments.",
+      "It allows multiple values for the same parameter.",
+      "It removes the need for specifying parameter types."
+    ],
+    "explanation": "Named arguments allow you to specify which value belongs to which parameter by explicitly naming them during the function call. This makes it possible to pass arguments in a different order than they are defined in the function signature, improving code readability.",
+    "topicCode": 1
+  },
+  {
+    "question": "What is Jetpack Compose in Android development?",
+    "correctAnswer": "A UI toolkit for building native UIs using Kotlin",
+    "incorrectAnswers": [
+      "A UI toolkit for XML-based layouts",
+      "A new database library for Android",
+      "A third-party library for animations"
+    ],
+    "explanation": "Jetpack Compose is Android’s modern UI toolkit that enables developers to build native UIs using Kotlin. It eliminates the need for XML layouts and allows UI development using declarative functions.",
+    "topicCode": 2
+  },
+  {
+    "question": "How do you manage UI state in Jetpack Compose?",
+    "correctAnswer": "Using remember and mutableStateOf",
+    "incorrectAnswers": [
+      "Using LiveData only",
+      "Using var variables inside composable functions",
+      "By using setState() function"
+    ],
+    "explanation": "Jetpack Compose follows a state-driven UI approach. To manage UI state, we use remember { mutableStateOf(value) }, which ensures that state persists across recompositions.",
+    "topicCode": 2
+  },
+  {
+    "question": "Which Jetpack Compose function is used to arrange UI elements vertically?",
+    "correctAnswer": "Column",
+    "incorrectAnswers": ["Box", "Row", "Stack"],
+    "explanation": "In Jetpack Compose, Column is a layout composable that arranges child elements vertically.",
+    "topicCode": 2
+  },
+  {
+    "question": "Which Jetpack Compose component is used to display images?",
+    "correctAnswer": "Image",
+    "incorrectAnswers": ["ImageView", "Picture", "Drawable"],
+    "explanation": "In Jetpack Compose, the Image component is used to display images. It allows you to load and display images within your UI by specifying the image resource or content.",
+    "topicCode": 2
+  },
+  {
+    "question": "What is the purpose of @Preview annotation in Jetpack Compose?",
+    "correctAnswer": "To provide a live preview of the UI in the IDE",
+    "incorrectAnswers": [
+      "To generate documentation for the composable function",
+      "To optimize the performance of the UI",
+      "To enable debugging in the UI code"
+    ],
+    "explanation": "It allows developers to see how their composable functions will look without having to run the app on a device or emulator.",
+    "topicCode": 2
+  },
+  {
+    "question": "What is the purpose of the Modifier in Jetpack Compose?",
+    "correctAnswer": "It adds styling and customization to the UI elements.",
+    "incorrectAnswers": [
+      "It defines the layout of the composable function.",
+      "It handles user interactions and input events.",
+      "It manages the state of the composable function."
+    ],
+    "explanation": "It allows developers to specify various properties such as size, padding, background color, alignment, and more to customize the appearance and behavior of UI components.",
+    "topicCode": 2
+  },
+  {
+    "question": "What is the purpose of the Scaffold component in Jetpack Compose?",
+    "correctAnswer": "It provides a structure for the app's UI layout.",
+    "incorrectAnswers": [
+      "It manages the app's navigation and backstack.",
+      "It handles animations and transitions between screens.",
+      "It defines the theming and styling of the app."
+    ],
+    "explanation": "In Jetpack Compose, the Scaffold component is used to provide a basic structure for the app's UI layout. It typically includes components such as the app bar, floating action button, bottom navigation bar, and the main content area.",
+    "topicCode": 2
+  },
+  {
+    "question": "How do you create a custom composable function in Jetpack Compose?",
+    "correctAnswer": "Use the @Composable annotation and define a function.",
+    "incorrectAnswers": [
+      "Extend the Composable class and override the render function.",
+      "Use the @CustomComposable annotation and define a function.",
+      "Implement the Composable interface and override the render function."
+    ],
+    "explanation": "This annotation tells the Compose compiler that the function is responsible for generating UI elements and should be recomposed when its state changes.",
+    "topicCode": 2
+  },
+  {
+    "question": "How do you clip an image to be shaped as a circle in Jetpack Compose?",
+    "correctAnswer": "By using the clip function with the modifier Modifier.clip(CircleShape)",
+    "incorrectAnswers": [
+      "By using the clip function with the modifier Modifier.clip(SquareShape)",
+      "By using the shape function with the modifier Modifier.shape(CircleShape)",
+      "By using the shape function with the modifier Modifier.shape(SquareShape)"
+    ],
+    "explanation": "In Jetpack Compose, the clip function is used with a shape to clip the composable to the specified shape. CircleShape is a predefined shape that represents a circle. So, Modifier.clip(CircleShape) will clip the composable to a circular shape.",
+    "topicCode": 2
+  },
+  {
+    "question": "Which Jetpack Compose component is used to handle scrolling content?",
+    "correctAnswer": "LazyColumn",
+    "incorrectAnswers": [
+      "Scrollable",
+      "ScrollableColumn",
+      "ScrollView"
+    ],
+    "explanation": "In Jetpack Compose, the LazyColumn component is typically used to handle scrolling content. It's optimized for displaying large lists of items efficiently by only compositing the visible items on the screen, which improves performance.",
+    "topicCode": 2
+  },
+  {
+    "question": "What is the purpose of the rememberCoroutineScope composable function in Jetpack Compose?",
+    "correctAnswer": "It handles asynchronous operations within a composable function.",
+    "incorrectAnswers": [
+      "It creates a new coroutine scope for concurrent tasks.",
+      "It remembers the state of a coroutine across recompositions.",
+      "It manages the lifecycle of a composable function."
+    ],
+    "explanation": "It ensures that long-running asynchronous tasks within a composable function maintain their state and progress correctly, even when the UI is recomposed due to changes.",
+    "topicCode": 2
+  },
+  {
+    "question": "What is the purpose of the rememberSaveable composable function in Jetpack Compose?",
+    "correctAnswer": "It persists the state of a composable function across configuration changes.",
+    "incorrectAnswers": [
+      "It saves the state of a composable function across process death.",
+      "It remembers the last saved state of a composable function.",
+      "It handles the navigation and back stack management of a composable function."
+    ],
+    "explanation": "It ensures that the state of the function is retained when device configurations, such as screen orientation, change. This allows the UI to be restored to its previous state after configuration changes, providing a seamless user experience.",
+    "topicCode": 2
+  },
+  {
+    "question": "Which Jetpack Compose component is used to handle user gestures, such as swiping or dragging?",
+    "correctAnswer": "Modifier.pointerInput",
+    "incorrectAnswers": [
+      "GestureDetector",
+      "TouchListener",
+      "DragGestureDetector"
+    ],
+    "explanation": "By applying the Modifier.pointerInput to a composable function, you can capture and respond to user interactions like touch and drag gestures.",
+    "topicCode": 2
+  },
+  {
+    "question": "How do you handle user input in Jetpack Compose when building a form?",
+    "correctAnswer": "Use the TextField component.",
+    "incorrectAnswers": [
+      "Use the ClickableText component.",
+      "Use the Button component.",
+      "Use the Form component."
+    ],
+    "explanation": "The TextField component allows users to input text and provides callbacks for handling changes to the input value.",
+    "topicCode": 2
+  },
+  {
+    "question": "How do you add padding to a composable function in Jetpack Compose?",
+    "correctAnswer": "Use the padding modifier.",
+    "incorrectAnswers": [
+      "Use the margin modifier.",
+      "Use the offset modifier.",
+      "Use the size modifier."
+    ],
+    "explanation": "The padding modifier allows you to specify the amount of space or padding you want to add around the content of the composable function.",
+    "topicCode": 2
+  },
+  {
+    "question": "What is the purpose of the AndroidManifest.xml file in an Android app?",
+    "correctAnswer": "To declare the app's components and permissions",
+    "incorrectAnswers": [
+      "To define the layout of the app's UI",
+      "To specify the app's dependencies",
+      "To handle user interactions and input events"
+    ],
+    "explanation": "The AndroidManifest.xml file in an Android app serves several purposes, but its primary function is to declare the app's components and permissions.",
+    "topicCode": 3
+  },
+  {
+    "question": "Which database library is recommended for handling local data storage in Android?",
+    "correctAnswer": "Room",
+    "incorrectAnswers": [
+      "SQLite",
+      "Realm",
+      "Firebase Realtime Database"
+    ],
+    "explanation": "Room is a Jetpack library that simplifies database operations by providing an abstraction layer over SQLite. It allows compile-time SQL validation, preventing runtime errors",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the purpose of ProGuard in Android app development?",
+    "correctAnswer": "To obfuscate the app's code and resources",
+    "incorrectAnswers": [
+      "To optimize the performance of the app",
+      "To handle app signing and distribution",
+      "To automate the build and release process"
+    ],
+    "explanation": "ProGuard obfuscates the app's code and resources, making it harder to understand and reverse engineer.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is Room in Android development?",
+    "correctAnswer": "A database persistence library",
+    "incorrectAnswers": [
+      "A UI component library",
+      "A networking library",
+      "A layout design library"
+    ],
+    "explanation": "By using Room, you can easily create, access, and manage a local database within your Android application. It provides better type safety compared to directly working with raw SQLite queries.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is Retrofit in Android development?",
+    "correctAnswer": "A type-safe HTTP client for Android and Java",
+    "incorrectAnswers": [
+      "A library for parsing XML data",
+      "A library for image loading",
+      "A library for database operations"
+    ],
+    "explanation": "Retrofit is a REST client for Android and Java. It makes it relatively easy to retrieve and upload JSON (or other structured data) via a REST-based web service.",
+    "topicCode": 3
+  },
+  {
+    "question": "Which component is used to handle background tasks in Android?",
+    "correctAnswer": "Service",
+    "incorrectAnswers": [
+      "Activity",
+      "BroadcastReceiver",
+      "Intent"
+    ],
+    "explanation": "A Service is an Android component used to perform long-running tasks in the background without UI interaction.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the purpose of WorkManager in Android?",
+    "correctAnswer": "To execute periodic or deferred background tasks",
+    "incorrectAnswers": [
+      "To manage UI animations",
+      "To store and retrieve data from SharedPreferences",
+      "To update UI elements dynamically"
+    ],
+    "explanation": "WorkManager is a Jetpack library used for deferrable and guaranteed background tasks, such as syncing data, processing logs, and scheduled uploads.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the role of Coroutines in Android?",
+    "correctAnswer": "To provide a lightweight way of handling background tasks asynchronously",
+    "incorrectAnswers": [
+      "To replace all Java threads in Android",
+      "To enhance database performance",
+      "To improve UI animations"
+    ],
+    "explanation": "Kotlin Coroutines are used for asynchronous programming in Android. They are lightweight and more efficient than traditional AsyncTask or Thread.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the purpose of the Navigation Component in Jetpack?",
+    "correctAnswer": "To simplify navigation between screens",
+    "incorrectAnswers": [
+      "To manage app settings",
+      "To handle UI animations",
+      "To improve network performance"
+    ],
+    "explanation": "Navigation Component is a Jetpack library that simplifies screen transitions and manages back stack handling.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the main advantage of using the Room database in Android?",
+    "correctAnswer": "It provides an abstraction layer over SQLite with compile-time verification",
+    "incorrectAnswers": [
+      "It provides direct access to SQLite with raw queries",
+      "It replaces SharedPreferences for storing key-value pairs",
+      "It improves UI animations in Jetpack Compose"
+    ],
+    "explanation": "Room is a Jetpack library that simplifies database operations by providing an abstraction layer over SQLite. It allows compile-time SQL validation, preventing runtime errors.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the primary benefit of using StateFlow over LiveData in Jetpack Compose?",
+    "correctAnswer": "StateFlow provides a reactive and predictable state management approach",
+    "incorrectAnswers": [
+      "StateFlow is more memory-efficient than LiveData",
+      "StateFlow is lifecycle-aware by default",
+      "LiveData does not work in Jetpack Compose"
+    ],
+    "explanation": "StateFlow is designed for reactive state management in Jetpack Compose and Kotlin Coroutines. Unlike LiveData, it always has a current value and does not require a lifecycle owner.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the main purpose of Hilt in Android development?",
+    "correctAnswer": "To simplify dependency injection",
+    "incorrectAnswers": [
+      "To manage database transactions efficiently",
+      "To improve network security",
+      "To handle state in Jetpack Compose"
+    ],
+    "explanation": "Hilt is a dependency injection library built on top of Dagger. It simplifies DI by reducing boilerplate code.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the recommended IDE for Android development?",
+    "correctAnswer": "Android Studio",
+    "incorrectAnswers": [
+      "IntelliJ IDEA",
+      "Eclipse",
+      "Visual Studio Code"
+    ],
+    "explanation": "Android Studio is a powerful and widely used IDE that provides excellent support for Kotlin and Java programming language.",
+    "topicCode": 3
+  },
+  {
+    "question": "Which annotation is used to define an entity class in Room?",
+    "correctAnswer": "@Entity",
+    "incorrectAnswers": [
+      "@Table",
+      "@Database",
+      "@EntityClass"
+    ],
+    "explanation": "The '@Entity' annotation is applied to a Kotlin or Java class to indicate that it represents a table in the database.",
+    "topicCode": 3
+  },
+  {
+    "question": "What is the purpose of the @Query annotation in Room?",
+    "correctAnswer": "To define custom SQL queries",
+    "incorrectAnswers": [
+      "To define a database migration",
+      "To define a database transaction",
+      "To define a foreign key relationship"
+    ],
+    "explanation": "Custom queries allow you to perform complex database operations that go beyond the basic CRUD (Create, Read, Update, Delete) operations provided by Room's built-in methods.",
+    "topicCode": 3
+  },
+  {
+    "question": "What does the HTTP status code 201 Created indicate?",
+    "correctAnswer": "The request was successful, and a new resource was created",
+    "incorrectAnswers": [
+      "The request was successful, but no content was returned",
+      "The request was incorrect due to client-side issues",
+      "The request was redirected to another resource"
+    ],
+    "explanation": "201 Created is used when a request successfully creates a new resource on the server. This is commonly used in POST requests when adding new data.",
+    "topicCode": 4
+  },
+  {
+    "question": "Which HTTP verb should be used to update an existing resource completely?",
+    "correctAnswer": "PUT",
+    "incorrectAnswers": ["GET", "POST", "PATCH"],
+    "explanation": "The PUT method is used to completely replace an existing resource on the server. If the resource doesn't exist, it can be created.",
+    "topicCode": 4
+  },
+  {
+    "question": "Which HTTP verb is used to retrieve data from a server without modifying it?",
+    "correctAnswer": "GET",
+    "incorrectAnswers": ["DELETE", "PUT", "PATCH"],
+    "explanation": "GET is used to fetch data from a server without making any changes.",
+    "topicCode": 4
+  },
+  {
+    "question": "What is the difference between 301 Moved Permanently and 302 Found?",
+    "correctAnswer": "301 means the resource has moved permanently, while 302 is a temporary redirect",
+    "incorrectAnswers": [
+      "301 is for caching, while 302 clears cache",
+      "301 is used for errors, while 302 is for success",
+      "301 and 302 are the same, used interchangeably"
+    ],
+    "explanation": "301 Moved Permanently: The resource has permanently moved to a new location, and search engines should update their records. 302 Found: The resource has temporarily moved, and search engines should not update the URL.",
+    "topicCode": 4
+  },
+  {
+    "question": "What is Cross-Site Scripting (XSS)?",
+    "correctAnswer": "A security vulnerability that allows attackers to inject malicious scripts",
+    "incorrectAnswers": [
+      "A technique to increase website speed",
+      "A method to encrypt API requests",
+      "A way to prevent SQL injection"
+    ],
+    "explanation": "XSS (Cross-Site Scripting) is an attack where malicious scripts are injected into websites to steal user data or take control of a page.",
+    "topicCode": 4
+  },
+  {
+    "question": "What is CSRF (Cross-Site Request Forgery)?",
+    "correctAnswer": "A vulnerability where an attacker tricks users into performing actions on a site they’re logged into",
+    "incorrectAnswers": [
+      "A method to speed up API responses",
+      "A caching issue in web applications",
+      "A security technique to prevent SQL injection"
+    ],
+    "explanation": "CSRF attacks occur when a malicious site tricks a user into performing actions on a site where they are already authenticated.",
+    "topicCode": 4
+  },
+  {
+    "question": "What is the purpose of HTTPS in web security?",
+    "correctAnswer": "To encrypt data between the client and the server",
+    "incorrectAnswers": [
+      "To make websites load faster",
+      "To prevent SQL injections",
+      "To block tracking cookies"
+    ],
+    "explanation": "HTTPS (HyperText Transfer Protocol Secure) encrypts data using SSL/TLS, ensuring secure communication.",
+    "topicCode": 4
+  },
+  {
+    "question": "What is the difference between SQL and NoSQL databases?",
+    "correctAnswer": "SQL databases use structured schemas, NoSQL databases are schema-less",
+    "incorrectAnswers": [
+      "SQL databases store data in key-value pairs, NoSQL uses tables",
+      "NoSQL databases don’t support indexing",
+      "SQL databases are always faster than NoSQL"
+    ],
+    "explanation": "SQL (Relational Databases) use structured tables with predefined schemas. Example: MySQL, PostgreSQL. NoSQL (Non-Relational Databases) store unstructured or semi-structured data and are schema-less. Example: MongoDB (Document-based), Redis (Key-Value store)",
+    "topicCode": 4
+  },
+  {
+    "question": "What is a primary key in a database?",
+    "correctAnswer": "A special column that uniquely identifies each row",
+    "incorrectAnswers": [
+      "A column used for indexing",
+      "A foreign key reference",
+      "A table that stores temporary data"
+    ],
+    "explanation": "A primary key (PK) uniquely identifies each row in a table.",
+    "topicCode": 4
+  },
+  {
+    "question": "What is JSON primarily used for?",
+    "correctAnswer": "Storing and transmitting structured data",
+    "incorrectAnswers": [
+      "Compressing files",
+      "Encrypting passwords",
+      "Running JavaScript code"
+    ],
+    "explanation": "JSON (JavaScript Object Notation) is a lightweight data format used for API responses and data storage.",
+    "topicCode": 4
+  },
+  {
+    "question": "Which data types are supported in JSON?",
+    "correctAnswer": "String, Number, Object, Array, Boolean, Null",
+    "incorrectAnswers": [
+      "String, Date, Integer, Float",
+      "Function, Class, Method, Object",
+      "Text, XML, YAML"
+    ],
+    "explanation": "JSON supports: String: \"hello\", Number: 42, Boolean: true/false, Array: [\"a\", \"b\", \"c\"], Object: {\"key\": \"value\"}, Null: null",
+    "topicCode": 4
+  },
+  {
+    "question": "What is GitHub used for?",
+    "correctAnswer": "Managing and hosting source code repositories",
+    "incorrectAnswers": [
+      "Running virtual machines",
+      "Designing UI for websites",
+      "Encrypting files"
+    ],
+    "explanation": "GitHub is a platform for hosting and collaborating on Git repositories.",
+    "topicCode": 4
+  },
+  {
+    "question": "What does the .gitignore file do in a GitHub repository?",
+    "correctAnswer": "Lists files and folders to ignore in Git version control",
+    "incorrectAnswers": [
+      "Stores commit history",
+      "Hides the repository from public view",
+      "Tracks Git credentials"
+    ],
+    "explanation": "A .gitignore file prevents specific files from being tracked by Git.",
+    "topicCode": 4
+  },
+  {
+    "question": "How do you create a heading in Markdown?",
+    "correctAnswer": "## Heading",
+    "incorrectAnswers": [
+      "=== Heading ===",
+      "[Heading]",
+      "**Heading**"
+    ],
+    "explanation": "Markdown uses # for headings. The more # you use, the smaller will be the size of the heading. Example: # H1 Heading ## H2 Heading ### H3 Heading.",
+    "topicCode": 4
+  },
+  {
+    "question": "How do you create a hyperlink in Markdown?",
+    "correctAnswer": "[Google](https://www.google.com)",
+    "incorrectAnswers": [
+      "{Google}(https://www.google.com)",
+      "<Google|https://www.google.com>",
+      "\"Google\" [https://www.google.com]"
+    ],
+    "explanation": "Markdown hyperlinks use [text](URL).",
+    "topicCode": 4
+  }
+]
