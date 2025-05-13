@@ -1,4 +1,4 @@
-package com.synac.presentation.routes.issue_report
+package com.synac.presentation.routes.path
 
 import io.ktor.resources.*
 

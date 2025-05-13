@@ -3,14 +3,9 @@ package com.synac.presentation.config
 import com.synac.domain.repository.IssueReportRepository
 import com.synac.domain.repository.QuizQuestionRepository
 import com.synac.domain.repository.QuizTopicRepository
-import com.synac.presentation.routes.issue_report.deleteIssueReportById
-import com.synac.presentation.routes.issue_report.getAllIssueReports
-import com.synac.presentation.routes.issue_report.insertIssueReport
-import com.synac.presentation.routes.quiz_question.*
-import com.synac.presentation.routes.quiz_topic.deleteQuizTopicById
-import com.synac.presentation.routes.quiz_topic.getAllQuizTopics
-import com.synac.presentation.routes.quiz_topic.getQuizTopicById
-import com.synac.presentation.routes.quiz_topic.upsertQuizTopic
+import com.synac.presentation.routes.issueReportRoutes
+import com.synac.presentation.routes.quizQuestionRoutes
+import com.synac.presentation.routes.quizTopicRoutes
 import com.synac.presentation.routes.root
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
@@ -29,25 +24,9 @@ fun Application.configureRouting() {
     routing {
 
         root()
-
-        //Quiz Question
-        getAllQuizQuestions(quizQuestionRepository)
-        upsertQuizQuestion(quizQuestionRepository)
-        insertQuizQuestionsInBulk(quizQuestionRepository)
-        getQuizQuestionById(quizQuestionRepository)
-        getRandomQuizQuestions(quizQuestionRepository)
-        deleteQuizQuestionById(quizQuestionRepository)
-
-        //Quiz Topic
-        getAllQuizTopics(quizTopicRepository)
-        upsertQuizTopic(quizTopicRepository)
-        getQuizTopicById(quizTopicRepository)
-        deleteQuizTopicById(quizTopicRepository)
-
-        //Issue Report
-        getAllIssueReports(issueReportRepository)
-        insertIssueReport(issueReportRepository)
-        deleteIssueReportById(issueReportRepository)
+        quizQuestionRoutes(quizQuestionRepository)
+        quizTopicRoutes(quizTopicRepository)
+        issueReportRoutes(issueReportRepository)
 
         staticResources(
             remotePath = "/images",

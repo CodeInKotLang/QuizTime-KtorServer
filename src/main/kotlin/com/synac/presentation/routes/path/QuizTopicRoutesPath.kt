@@ -1,4 +1,4 @@
-package com.synac.presentation.routes.quiz_topic
+package com.synac.presentation.routes.path
 
 import io.ktor.resources.*
 
